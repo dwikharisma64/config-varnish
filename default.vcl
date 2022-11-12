@@ -16,7 +16,7 @@ import std;
 #139.59.112.70 
 #167.99.232.125
 backend default {
-    .host = "167.99.232.125";
+    .host = "";
     .port = "80";
 }
 
@@ -45,7 +45,7 @@ backend default {
 acl purge {
     "localhost";
     "127.0.0.1";
-    "167.99.232.125";
+    "";
     "::1";
 }
 
