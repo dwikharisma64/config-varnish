@@ -13,8 +13,7 @@
 vcl 4.1;
 import std;
 # Default backend definition. Set this to point to your content server.
-#139.59.112.70 
-#167.99.232.125
+
 backend default {
     .host = "";
     .port = "80";
