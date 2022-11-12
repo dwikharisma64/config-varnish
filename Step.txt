@@ -13,4 +13,5 @@
 
 7. cp /lib/systemd/system/varnish.service /etc/systemd/system 
 8. nano /etc/systemd/system/varnish.service
-9. netstat -plntu
+9. systemctl daemon-reload
+10. netstat -plntu
