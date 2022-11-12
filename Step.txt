@@ -1,0 +1,16 @@
+1. apt install nginx
+2. systemctl status nginx
+3. apt instal varnish
+4. systemctl start varnish
+5. systemctl enable varnish
+6. nano /etc/default/varnish 
+    DAEMON_OPTS="-a :8080 \
+             -T localhost:6082 \
+             -f /etc/varnish/default.vcl \
+             -S /etc/varnish/secret \
+             -s malloc,256m"
+
+
+7. cp /lib/systemd/system/varnish.service /etc/systemd/system 
+8. nano /etc/systemd/system/varnish.service
+9. netstat -plntu
